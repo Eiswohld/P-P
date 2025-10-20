@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cont-nb {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+.huvru {
+  text-align: center;
+}
+
+.contv {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.bloggen {
+  margin-bottom: 2%;
+}
+
+.bloggbild {
+  width: 40vw;
+  height: 40vh;
+  background-image: url("laptopbild.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+}
+
+.datumv {
+  background-color: rgba(243, 245, 247, 0.492);
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.rubrikv {
+  margin-top: 2%;
+}
+
+.textv {
+  width: 40vh;
+}
+
+/***********************************/
+.conth {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.nyAk {
+  margin-bottom: 2%;
+}
+
+.nyhetsbild {
+  width: 40vw;
+  height: 40vh;
+  background-image: url("naturvagbild.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+}
+.datumh {
+  background-color: rgba(243, 245, 247, 0.492);
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.rubrikh {
+  margin-top: 3%;
+}
+
+.texth {
+  width: 40vh;
+}
+
+.länkar {
+  font-weight: bold;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .bloggbild,
+  .nyhetsbild {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bloggbild,
+  .nyhetsbild {
+    max-width: 800px;
+  }
+}
