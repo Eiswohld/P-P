@@ -1,0 +1,119 @@
+
+
+//Variabler – små lådor där vi sparar värden som används flera gånger
+
+$overlay-color: rgba(0, 0, 0, 0.7); //färg på skuggan över bilden
+$text-color: #f5f5f5; //vit text
+$title-font: "Playfair Display", serif; //vilket typsnitt vi använder från google fonts
+
+//Mixin – en mall vi använder för att göra texten responsiv (ändrar storlek beroende på skärm)
+@mixin responsive-font($mobile, $desktop) {
+  font-size: $desktop;
+  @media (max-width: 768px) {
+    font-size: $mobile;
+  }
+}
+
+//Här börjar HERO-sektionen
+.hero {
+  position: relative; //så att vi kan lägga saker (som skuggan) ovanpå bilden
+  background-image: url("images/book.jpg"); //bilden i bakgrunden
+  background-size: cover; //bilden fyller hela ytan
+  background-position: center; //mitten av bilden syns
+  background-repeat: no-repeat; //bilden upprepas inte
+  min-height: 70vh; //tar upp 70% av skärmens höjd
+  display: flex; //gör att vi kan placera texten mitt i
+  flex-direction: column; //lägger rubrikerna ovanpå varandra
+  justify-content: center; //placerar texten i mitten på höjden
+  align-items: center; //placerar texten i mitten på bredden
+  text-align: center; //centrerar texten
+  padding: 60px 20px; //luft runt texten
+  z-index: 1; //ser till att texten ligger ovanför skuggan
+  overflow: hidden; //döljer kanter när bilden zoomar
+
+  //Mörk overlay (skuggan som ligger över bilden)
+  &::before {
+    content: ""; //behövs för att skapa en osynlig ruta
+    position: absolute; //gör att den ligger ovanpå bilden
+    inset: 0; //täcker hela ytan
+    background-color: $overlay-color; //svart genomskinlig färg
+    z-index: -1; //hamnar bakom texten
+    transition: transform 4s ease, opacity 1s ease; //gör effekten mjuk
+  }
+
+  //Zoom-effekt när man rör bilden (mus eller mobiltryck)
+  &:hover::before,
+  &:active::before {
+    transform: scale(1.1); //zoomar in lite
+    opacity: 0.85; //gör den lite ljusare
+  }
+
+  //Textens grundstil
+  * {
+    font-family: $title-font; //vårt typsnitt
+    color: $text-color; //ljus text
+    line-height: 1.1; //avstånd mellan raderna
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); //mjuk skugga bakom texten
+    transition: text-shadow 0.4s ease, transform 0.4s ease; //gör att effekten blir mjuk
+  }
+
+  //Rubriken (stora texten)
+  h1 {
+    @include responsive-font(2rem, 4rem); //gör texten mindre på mobil
+    margin-bottom: 0.2rem; //lite luft nedanför
+    animation: fadeIn 1s ease-out forwards; //snygg fade-in när sidan laddas
+
+    //När man pekar på texten
+    &:hover,
+    &:active {
+      text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.7); // texten lyser
+      transform: scale(1.03); //blir lite större
+    }
+  }
+
+  //Undertiteln (lite mindre text)
+  h2 {
+    @include responsive-font(1.3rem, 2rem);
+    margin-bottom: 0.1rem;
+    animation: fadeIn 1.3s ease-out forwards;
+
+    &:hover,
+    &:active {
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+      transform: scale(1.02);
+    }
+  }
+
+  //Brödtexten (den lilla texten)
+  p {
+    @include responsive-font(1rem, 1.3rem);
+    max-width: 600px; //gör att texten inte blir för bred
+    margin-top: 0.1rem;
+    animation: fadeIn 1.6s ease-out forwards;
+
+    &:hover,
+    &:active {
+      text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+//gör att texten har en effekt när man hovrar över den
+@keyframes fadeIn {
+  from {
+    opacity: 0; //börjar genomskinlig
+    transform: translateY(10px); //kommer upp lite underifrån
+  }
+  to {
+    opacity: 1; //blir synlig
+    transform: translateY(0); //stannar på plats
+  }
+}
+
+//Extra justering för små mobiler, responsiv
+@media (max-width: 480px) {
+  .hero {
+    min-height: 60vh; //gör sektionen lite kortare
+    padding: 40px 15px; //mindre luft runt texten
+  }
+}
