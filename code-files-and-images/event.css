@@ -1,6 +1,9 @@
+html, body {
+  font-family: "Playfair Display", serif;
+}
+
 * {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
