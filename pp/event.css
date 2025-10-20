@@ -5,10 +5,10 @@
 
 body {
   margin: 0;
-  background: #F5F5F0;
+  background: #ffe6f0;
   color: #1a1a1a;
-  -webkit-font-smoothing: antialiased; /* Gör texten mjukare i webbläsare (t.ex. Chrome, Safari) */
-  padding: 80px 20px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0px; /* Tar bort den stora toppmarginalen */
   min-height: 100vh;
 }
 
@@ -19,7 +19,7 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 50px;
-  background-color: #ffffff;
+  background-color: #ffa2a2;
 }
 
 .menu {
@@ -110,13 +110,13 @@ header {
 .container {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+   margin: 40px auto;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 90px;
 }
 
 h1 {
@@ -297,7 +297,7 @@ h1 {
 
 @media (max-width: 768px) {
   body {
-    padding: 60px 16px;
+    padding: 0px;
   }
   
   h1 {
