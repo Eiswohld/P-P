@@ -8,7 +8,7 @@ html, body {
 
 body {
   margin: 0;
-  background: #ffe6f0;
+  background: white;
   color: #1a1a1a;
   -webkit-font-smoothing: antialiased;
   padding: 0 0px; /* Tar bort den stora toppmarginalen */
@@ -22,7 +22,7 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 50px;
-  background-color: #ffa2a2;
+  background-color: #f5d1d1;
 }
 
 .menu {

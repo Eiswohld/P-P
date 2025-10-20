@@ -156,9 +156,8 @@ header {
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background: rgb(239, 7, 7);
   transform: scaleX(0);
-  transition: transform 0.1s ease;
+  transition: transform 0.8s ease;
   transform-origin: right;
 }
 
@@ -214,13 +213,8 @@ header {
     align-self: center;
     padding: 1em;
     border-radius: 50%;
-    box-shadow: 0 5px 10px #b1323a98
 }
 
 .socialmedia-buttons a svg{
     width: 25px;
-}
-
-.socialmedia-buttons a:hover{
-    background-color: #dd3d49;
 }

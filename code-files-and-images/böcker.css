@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(135deg, #ffe6f0 0%, #ffffff 50%, #ffccd5 100%);
+    background-color: white;
     min-height: 100vh;
     padding-top: 0px;
 }
@@ -168,7 +168,7 @@ figcaption {
 }
 
 figcaption h2 {
-    color: #dc143c;
+    color: black;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -180,12 +180,12 @@ figcaption h2 {
 }
 
 .author span {
-    color: #ff1493;
+    color: black;
     font-weight: bold;
 }
 
 .genre {
-    color: #999;
+    color: #ff69b4;
     font-size: 0.9em;
     padding: 8px 12px;
     background: #ffe6f0;
