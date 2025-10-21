@@ -113,7 +113,8 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 50px;
-  background-color: #ffffff;
+  background-color: #FFB6C1;
+  font-size: 22px;
 }
 
 .menu {
@@ -170,6 +171,7 @@ header {
   color: rgb(255, 0, 0);
 }
 
+
 @media (max-width: 700px) {
   header {
     grid-template-columns: auto auto;
@@ -217,4 +219,9 @@ header {
 
 .socialmedia-buttons a svg{
     width: 25px;
+}
+
+
+.socialmedia-buttons a:hover{
+    background-color: #dd3d49;
 }
