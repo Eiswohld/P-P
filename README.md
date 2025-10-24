@@ -19,8 +19,10 @@ event och böcker, mer tänkt som en webbplats för att marknadsföra bokhandeln
 - Tailwind
 - Fokus på semantik, tillgänglighet och inspererande
 
-##
-
+## 🚀 Öppna projekt:
+1.
+2.
+3.
 
 ## 👩‍💻 skapad av grupp6:
   - Madeleine
