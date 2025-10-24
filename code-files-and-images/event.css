@@ -8,7 +8,7 @@ html, body {
 
 body {
   margin: 0;
-  background: #ffe6f0;
+  background: white;
   color: #1a1a1a;
   -webkit-font-smoothing: antialiased;
   padding: 0 0px; /* Tar bort den stora toppmarginalen */
@@ -22,7 +22,8 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 50px;
-  background-color: #ffa2a2;
+  background-color: #FFB6C1;
+  font-size: 22px;
 }
 
 .menu {
@@ -199,10 +200,9 @@ h1 {
 }
 
 .date-bubble .time {
-  font-size: 13px;
+  font-size: 18px;
   color: #999;
   margin-left: auto;
-  font-weight: 400;
 }
 
 .event-details {
@@ -218,6 +218,7 @@ h1 {
   color: #1a1a1a;
   line-height: 1.3;
   letter-spacing: -0.5px;
+  font-size: 26px;
 }
 
 .meta {
@@ -232,7 +233,7 @@ h1 {
   color: #666;
   line-height: 1.7;
   margin: 0;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -258,7 +259,7 @@ h1 {
 }
 
 .tag.family {
-  background: #e79703;
+  background: #f8d28b;
   color: black;
 }
 
@@ -325,3 +326,26 @@ h1 {
   }
 }
 
+.socialmedia-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    padding: 1rem;
+    gap: 15px;
+}
+
+.socialmedia-buttons a{
+    background-color: white;
+    align-self: center;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.socialmedia-buttons a svg{
+    width: 25px;
+}
+
+
+.socialmedia-buttons a:hover{
+    background-color: #dd3d49;
+}

@@ -16,6 +16,9 @@ html, body {
 }
 .huvru {
   text-align: center;
+  font-size: 24px;
+  padding-top: 24px;
+  font-weight: bold;
 }
 
 .contv {
@@ -25,6 +28,7 @@ html, body {
 
 .bloggen {
   margin-bottom: 2%;
+  font-size: 24px;
 }
 
 .bloggbild {
@@ -47,6 +51,8 @@ html, body {
 }
 .rubrikv {
   margin-top: 2%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .textv {
@@ -61,6 +67,7 @@ html, body {
 
 .nyAk {
   margin-bottom: 2%;
+  font-size: 24px;
 }
 
 .nyhetsbild {
@@ -82,6 +89,8 @@ html, body {
 }
 .rubrikh {
   margin-top: 3%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .texth {
@@ -121,7 +130,8 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 50px;
-  background-color: #ffffff;
+  background-color: #FFB6C1;
+  font-size: 22px;
 }
 
 .menu {

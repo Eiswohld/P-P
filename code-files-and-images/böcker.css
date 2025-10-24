@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(135deg, #ffe6f0 0%, #ffffff 50%, #ffccd5 100%);
+    background-color: white;
     min-height: 100vh;
     padding-top: 0px;
 }
@@ -42,7 +42,8 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 50px;
-  background-color: #ffffff;
+  background-color: #FFB6C1;
+  font-size: 22px;
 }
 
 .menu {
@@ -136,6 +137,9 @@ header {
     gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 
 .book-cards {
@@ -168,7 +172,7 @@ figcaption {
 }
 
 figcaption h2 {
-    color: #dc143c;
+    color: black;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -180,12 +184,12 @@ figcaption h2 {
 }
 
 .author span {
-    color: #ff1493;
+    color: black;
     font-weight: bold;
 }
 
 .genre {
-    color: #999;
+    color: black;
     font-size: 0.9em;
     padding: 8px 12px;
     background: #ffe6f0;
@@ -196,3 +200,26 @@ figcaption h2 {
 }
 
 
+.socialmedia-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    padding: 1rem;
+    gap: 15px;
+}
+
+.socialmedia-buttons a{
+    background-color: white;
+    align-self: center;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.socialmedia-buttons a svg{
+    width: 25px;
+}
+
+
+.socialmedia-buttons a:hover{
+    background-color: #dd3d49;
+}
