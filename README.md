@@ -20,9 +20,10 @@ event och böcker, mer tänkt som en webbplats för att marknadsföra bokhandeln
 - Fokus på semantik, tillgänglighet och inspererande
 
 ## 🚀 Öppna projekt:
-1. kopiera:  "git clone https://github.com/Eiswohld/P-P.git"
-2. klista in i Github terminalen
-3. nu kan du se hemsidan
+- git clone https://github.com/Eiswohld/P-P.git
+- cd P-P
+- öppna index.html
+- Nu kan du se hemsidan, yippieee
 
 ## 👩‍💻 skapad av grupp6:
   - Madeleine
