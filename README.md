@@ -1,4 +1,4 @@
-# 📖 PÄRMAR och POESI
+# 📖 PÄRMAR & POESI
 ## Skol projekt:
 Ett frontend-projekt som hyllar det personliga uttrycket i digital form. 
 Pärmar och Poesi är en webbapplikation där användare kan läsa om
