@@ -22,7 +22,7 @@ event och böcker, mer tänkt som en webbplats för att marknadsföra bokhandeln
 ## 🚀 Öppna projekt:
 1. kopiera:  "git clone https://github.com/Eiswohld/P-P.git"
 2. klista in i Github terminalen
-3.nu kan du se hemsidan
+3. nu kan du se hemsidan
 
 ## 👩‍💻 skapad av grupp6:
   - Madeleine
