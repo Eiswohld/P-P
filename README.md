@@ -26,12 +26,12 @@ event och böcker, mer tänkt som en webbplats för att marknadsföra bokhandeln
 - Nu kan du se hemsidan, yippieee
 
 ## 👩‍💻 skapad av grupp6:
-  - Madeleine
-  - Tommy
-  - Adnan
-  - Luis
-  - Ida
-  - Mattias
+  - Madeleine Eiswohld
+  - Tommy Hulten
+  - Adnan Ahmed
+  - Luis Andres
+  - Ida Antonsen
+  - Mattias Waern
     
 
 
